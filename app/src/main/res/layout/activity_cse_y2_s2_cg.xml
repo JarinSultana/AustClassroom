@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CseY2S2CgActivity"
+    android:onClick="hideKeyboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/cgpa2">
+
+        <include layout="@layout/bmb_layout"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="GPA Calculation"
+            android:textSize="35sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="90dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp">
+        <TextView
+            android:id="@+id/textmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enter obtained marks"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/sdLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/textmarks"
+            android:background="@drawable/et_bg"
+            android:text="CSE 2200:Software Development-III -->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editSdLab"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sdLab"
+            android:layout_below="@id/textmarks"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"/>
+
+
+        <TextView
+            android:id="@+id/numMethods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/sdLab"
+            android:background="@drawable/et_bg"
+            android:text="CSE 2201:Numerical Methods -->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editNumMethods"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numMethods"
+            android:layout_below="@id/sdLab"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+        <TextView
+            android:id="@+id/numMethodsLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/numMethods"
+            android:background="@drawable/et_bg"
+            android:text="CSE 2202:Numerical Methods Lab -->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editNumMethodsLab"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numMethodsLab"
+            android:layout_below="@id/numMethods"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+
+        <TextView
+            android:id="@+id/algorithmsMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/numMethodsLab"
+            android:text="CSE 2207:Algorithms -->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editAlgorithms"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/algorithmsMarks"
+            android:layout_below="@id/numMethodsLab"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+        <TextView
+            android:id="@+id/algorithmsMarksLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/algorithmsMarks"
+            android:text="CSE 2208:Algorithms Lab -->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editAlgorithmsLab"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/algorithmsMarksLab"
+            android:layout_below="@id/algorithmsMarks"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+
+        <TextView
+            android:id="@+id/deptMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/algorithmsMarksLab"
+            android:text="CSE 2209:Digital Electronics &amp; Pulse Tech. -->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editDeptMarks"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/deptMarks"
+            android:layout_below="@id/algorithmsMarksLab"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+
+        <TextView
+            android:id="@+id/deptMarksLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/deptMarks"
+            android:background="@drawable/et_bg"
+            android:text="CSE 2210:Digital Electronics &amp; Pulse Tech.Lab->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editDeptMarksLab"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/deptMarksLab"
+            android:layout_below="@id/deptMarks"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+        <TextView
+            android:id="@+id/computerArchitechMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/deptMarksLab"
+            android:background="@drawable/et_bg"
+            android:text="CSE 2213:Computer Architecture -->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editComputerArchitechMarks"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/computerArchitechMarks"
+            android:layout_below="@id/deptMarksLab"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+
+        <TextView
+            android:id="@+id/assemblyLabMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/computerArchitechMarks"
+            android:text="CSE 2214:Assembly Language Programming ->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editAssemblyLabMarks"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/assemblyLabMarks"
+            android:layout_below="@id/computerArchitechMarks"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+        <TextView
+            android:id="@+id/math4Marks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/assemblyLabMarks"
+            android:text="CSE 2203:Mathematics-IV -->"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/editMath4Marks"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/math4Marks"
+            android:layout_below="@id/assemblyLabMarks"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:maxLength="3"
+            android:layout_marginTop="17dp"/>
+
+
+        <Button
+            android:id="@+id/calculateCgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/math4Marks"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Calculate"
+            android:background="@drawable/et_bg"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/calculatedGPAText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculateCgBtn"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_bg"
+            android:text="Calculated GPA -->"
+            android:padding="5dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/calculatedGPANum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculateCgBtn"
+            android:layout_toRightOf="@id/calculatedGPAText"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:background="@drawable/et_bg"
+            android:textSize="22sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

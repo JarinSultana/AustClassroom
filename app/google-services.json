@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "260642516599",
+    "firebase_url": "https://aust-classroom.firebaseio.com",
+    "project_id": "aust-classroom",
+    "storage_bucket": "aust-classroom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260642516599:android:c62494e0aef85b40",
+        "android_client_info": {
+          "package_name": "com.example.aust_classroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260642516599-6ea5nj2tgi7u5n481nsstoahpa952o9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aust_classroom",
+            "certificate_hash": "5860a6a11f2014fef61602c1ba7cc287a73c9a25"
+          }
+        },
+        {
+          "client_id": "260642516599-q5510vt5hu9h5ni65tch5rcg5pvr0lts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtgtiAEF__Vj0Sl_UEYkoUMRIKmlfAVcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260642516599-q5510vt5hu9h5ni65tch5rcg5pvr0lts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivityTeacher"
+    android:background="@drawable/drawable_gradient_animation_list_2">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="hideKeyboard1">
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="Sign Up"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:layout_width="98dp"
+                android:layout_height="83dp"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/aust_classroom_logo" />
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLogin"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_below="@id/linear1">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/teacherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:counterMaxLength="30"
+                    app:counterTextAppearance="@color/colorTransparentWhite"
+                    android:background="@drawable/et_bg"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_marginBottom="20dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:textColorHint="@color/colorTransparentWhite"
+                        android:textColor="@color/colorWhite"
+                        android:inputType="text"
+                        android:maxLength="30"
+                        android:layout_marginLeft="5dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--<com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/studentDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:counterTextAppearance="@color/colorTransparentWhite"
+                    android:background="@drawable/et_bg"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_marginBottom="20dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Department"
+                        android:textColorHint="@color/colorTransparentWhite"
+                        android:textColor="@color/colorWhite"
+                        android:inputType="text"
+
+                        android:layout_marginLeft="5dp"/>
+                </com.google.android.material.textfield.TextInputLayout>-->
+                <Spinner
+                    android:id="@+id/departmentSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/et_bg"
+                    android:layout_marginBottom="20dp">
+                </Spinner>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputEmailTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@drawable/et_bg"
+                    android:layout_marginBottom="20dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:textColorHint="@color/colorTransparentWhite"
+                        android:textColor="@color/colorWhite"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginLeft="5dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phoneTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/et_bg"
+                    android:textColorHint="@color/colorWhite"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/teacherPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:hint="Phone No."
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorTransparentWhite" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputPasswordTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@drawable/et_bg"
+                    android:layout_marginBottom="20dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:textColorHint="@color/colorTransparentWhite"
+                        android:textColor="@color/colorWhite"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="5dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputPasswordConfirmTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorWhite"
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorWhite"
+                    android:background="@drawable/et_bg"
+                    android:layout_marginBottom="20dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirm Password"
+                        android:textColorHint="@color/colorTransparentWhite"
+                        android:textColor="@color/colorWhite"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="5dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/signupTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative2"
+            android:layout_alignParentLeft="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="serif"
+            android:onClick="signupInputTeacher"
+            android:text="Sign up"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/loginTeacher"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signupTeacher"
+            android:text="already have an account?Login Now"
+            android:textAlignment="center"
+            android:background="@drawable/btn_bg"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="serif"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CseDiscussionActivity"
+    android:background="@color/colorBackground"
+    android:onClick="hideKeyboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/newdis">
+        <include layout="@layout/bmb_layout"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sharing Zone :3"
+            android:textSize="35dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="45dp"
+            android:fontFamily="cursive"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share PDFs or Docx here"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="cursive"/>
+        <TextView
+            android:id="@+id/notifyFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginTop="90dp"
+            android:text="No file is selected"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/selectFileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifyFile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Select File"
+            android:background="@drawable/et_bg"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/uploadFileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectFileBtn"
+            android:text="Upload File"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/et_bg"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/showFileText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploadFileBtn"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:text="You can see all uploaded files by clicking this button"/>
+        <Button
+            android:id="@+id/showFileListBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showFileText"
+            android:layout_marginTop="10dp"
+            android:text="Uploaded Files"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/et_bg"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

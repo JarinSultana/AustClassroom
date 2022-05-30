@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetPassActivity"
+    android:onClick="hideKeyboard2">
+
+    <RelativeLayout
+        android:id="@+id/forgetrel1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/forgetpass">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Recover"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/forgetPassEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgetrel1"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@android:color/black"
+        android:background="@drawable/et_bg"
+        android:fontFamily="sans-serif-light"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:hint="Email Address"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/forgetPassRecoverBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgetPassEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Send"
+        android:background="@drawable/et_bg"
+        android:focusableInTouchMode="true"/>
+
+    <TextView
+        android:id="@+id/helptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgetPassRecoverBtn"
+        android:layout_marginTop="100dp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/black"
+        android:text="Enter the email address which you have registered previously for this app. We will send a password recovery link to your provided email. Make sure you have typed your email address correctly. Thank you."
+        android:textSize="17sp"
+        android:padding="15dp"/>
+
+</RelativeLayout>

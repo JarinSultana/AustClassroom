@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Aust_classroom</string>
+    <string-array name="departments">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>CE</item>
+        <item>CIVIL</item>
+        <item>ME</item>
+        <item>IPE</item>
+        <item>TE</item>
+        <item>ARC</item>
+        <item>BBA</item>
+    </string-array>
+
+
+</resources>

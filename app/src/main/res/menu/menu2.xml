@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/logoutMenu2"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        android:title="Logout"
+        android:icon="@drawable/logout">
+    </item>
+
+    <item
+        android:id="@+id/eduNoticeMenu"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Educational Notice"
+        android:icon="@drawable/educational_notice">
+    </item>
+
+    <item
+        android:id="@+id/genNoticeMenu"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:title="General Notice"
+        android:icon="@drawable/general_notice">
+    </item>
+
+    <item
+        android:id="@+id/discussionForumMenu"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        android:title="Discussion Forum"
+        android:icon="@drawable/discussion_forum">
+    </item>
+
+</menu>

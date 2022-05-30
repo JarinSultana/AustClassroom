@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:bmb_boomEnum="boomParabola_3"
+        app:bmb_showMoveEaseEnum="inOutElastic"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_draggable="true"
+        app:bmb_dotRadius="0dp"
+        app:bmb_use3DTransformAnimation="true"
+        app:bmb_orderEnum="orderRandom"
+        app:bmb_shadowEffect="true"
+        app:bmb_showDelay="100"
+        app:bmb_frames="60"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_2"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_2">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/plus"
+            android:layout_gravity="center"/>
+
+    </com.nightonke.boommenu.BoomMenuButton>
+
+
+
+
+</RelativeLayout>

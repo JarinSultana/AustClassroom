@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#262938</color>
+    <color name="colorPrimaryDark">#181A24</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary1">#FFC107</color>
+    <color name="colorPrimaryDark1">#FFA000</color>
+    <color name="colorBackground">#fcfcfc</color>
+    <color name="lightGrayLine">#ededed</color>
+    <color name="deepPurple">#E48462E2</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="colorLayerBack">#8a56ab</color>
+    <color name="colorBack">#241333</color>
+    <color name="colorTitle">#362742</color>
+    <color name="colorSubTitle">#c5c9cf</color>
+    <color name="colorHorizontalDivider">#898a56ab</color>
+
+
+
+    <!-- 1st Gradient color -->
+    <color name="colorPurple_A400">#D500F9</color>
+    <color name="colorPurple_900">#4A148C</color>
+    <!-- ./ 1st Gradient color -->
+
+    <!-- 2nd Gradient color -->
+    <color name="colorAmber_A400">#FFC400</color>
+    <color name="colorAmber_900">#FF6F00</color>
+    <!-- ./ 2nd Gradient color -->
+
+    <!-- 3rd Gradient color -->
+    <color name="colorGreen_A400">#00E676</color>
+    <color name="colorGreen_900">#1B5E20</color>
+    <!-- ./ 3rd Gradient color -->
+
+    <!-- 4th Gradient color -->
+    <color name="colorRed_A400">#FF1744</color>
+    <color name="colorRed_900">#B71C1C</color>
+    <!-- ./ 4th Gradient color -->
+
+    <!-- new 1st Gradient color-->
+    <color name="colorBlue_A400">#2193b0</color>
+    <color name="colorBlue_900">#6dd5ed</color>
+    <!-- ./ new 1st Gradient color-->
+
+    <!-- new 2nd Gradient color-->
+    <color name="colorGray_A400">#2c3e50</color>
+    <color name="colorGray_900">#bdc3c7</color>
+    <!-- ./ new 2nd Gradient color-->
+
+    <!-- new 3rd Gradient color-->
+    <color name="colorTranquil_A400">#ef629f</color>
+    <color name="colorTranquil_900">#eecda3</color>
+    <!-- ./ new 3rd Gradient color-->
+
+    <!-- new 4th Gradient color-->
+    <color name="colorFrost_A400">#004e92</color>
+    <color name="colorFrost_900">#000428</color>
+    <!-- ./ new 4th Gradient color-->
+
+
+</resources>
